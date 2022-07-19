@@ -234,7 +234,7 @@ def find_qwerty_value(letter):
         return letter
     
 
-def encrypt(phrase):
+def decrypt(phrase):
 
     new_phrase = ""
 
@@ -246,7 +246,7 @@ def encrypt(phrase):
 
         new_phrase += letter_value
 
-    print(p(" Derypted: ", g) + fix + "| " + new_phrase)
+    print(p(" Decrypted: ", g) + fix + "| " + new_phrase)
 
 fix = '\033[0m'
 
@@ -261,6 +261,6 @@ def main():
     while up:
         print("------------------------------------------------------------------------------------------------")
         phrase = input(p(" Phrase:   ", c) + fix + "| ")
-        encrypt(phrase)
+        decrypt(phrase)
 
 main()
